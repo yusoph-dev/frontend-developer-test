@@ -5,7 +5,8 @@ function Header(props) {
     const [cartCount, setCartCount] = useState(0);
 
     useEffect(() => {
-        setCartCount(0);
+        const totalItems = props.cartData.reduce((acc, item) => acc + item.quantity, 0);
+        setCartCount(totalItems);
     }, [props.cartData]);
 
     const toggleCartVisibility = () => {
@@ -19,7 +20,7 @@ function Header(props) {
             <div className="data cart-area">
                 <button
                     id="cart-button"
-                    className={''}
+                    className={isCartVisible ? 'active' : ''}
                     onClick={toggleCartVisibility}
                     disabled={cartCount === 0}
                 >
