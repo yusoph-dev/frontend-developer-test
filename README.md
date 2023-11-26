@@ -39,6 +39,16 @@ npm installed (comes with Node.js installation)
 
 2. The production build files will be generated in the build directory. You can deploy these files to a hosting platform like Vercel or Netlify.
 
+## `Unit testing using Jest`
+
+1. you can browse the test file thru src/App.test.js:
+
+2. To run Unit testing
+
+### npm run jest-test
+
+this will test rendering of product details, selects size and adds product to cart
+
 ## Using the React JS Project
 
 This React JS project is a simple e-commerce application that allows users to add items to a shopping cart. The application consists of two main components:
