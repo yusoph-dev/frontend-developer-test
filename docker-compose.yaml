@@ -1,0 +1,12 @@
+version: "3.8"
+services:
+  frontendtestapp:
+    build: ./
+    container_name: frontendtestapp_container
+    ports:
+      - '3000:3010'
+    volumes:
+      - ./app
+      - ./app/node_modules
+    stdin_open: true
+    tty: true
