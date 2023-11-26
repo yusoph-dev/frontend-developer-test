@@ -1,4 +1,4 @@
-# ReactJS Front-End Developer Test App
+# ReactJS E-Commerce App
 
 ## Live Demo
 
@@ -27,6 +27,32 @@ Ensure you have Node.js installed (recommended version: v16.14.0 or higher) and 
     ```bash
     npm install
     ```
+
+## Main Tools and Dependencies
+
+Here are some of the main tools and dependencies used in this project:
+
+- **React:** A JavaScript library for building user interfaces.
+
+- **Redux:** A predictable state container for JavaScript apps.
+
+- **Axios:** A promise-based HTTP client for making API requests.
+
+- **Node-Sass:** A library for Sass, a popular CSS preprocessor.
+
+- **Webpack:** A module bundler for JavaScript applications.
+
+- **Jest:** A testing framework for JavaScript projects.
+
+- **React Testing Library:** A library for testing React components.
+
+- **Babel:** A JavaScript compiler that transforms ECMAScript 2015+ code into a backwards-compatible version of JavaScript.
+
+- **ESLint:** A tool for identifying and reporting on patterns found in ECMAScript/JavaScript code.
+
+- **Sass:** A CSS extension language that adds features like variables and nested rules.
+
+- **Web Vitals:** A library for measuring web performance metrics.
 
 ## Running the Development Server
 
