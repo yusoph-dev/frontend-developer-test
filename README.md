@@ -2,6 +2,8 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+![alt text](https://github.com/yusoph-dev/frontend-developer-test/blob/main/public/laptop-ui.png?raw=true)
+
 ## Prerequisites
 
 Node.js installed (recommended version: v16.14.0 or higher)
