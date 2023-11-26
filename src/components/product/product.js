@@ -56,6 +56,10 @@ function Product({ productData: initialProductData }) {
 
     const addToCart = (selectedSize) => {
         try {
+            if (!selectedSize) {
+                alert('Please select a size first');
+                return;
+            }
             return;
         } catch (error) {
             console.error('Error adding to cart:', error);
@@ -65,18 +69,23 @@ function Product({ productData: initialProductData }) {
     return (
         <div id="divider">
             <div id="product-image">
-                <img src={placeholder} alt="Product Image" />
+                <img src={productData?.imageURL || placeholder} alt="Product Image" />
             </div>
             <div id="product-details">
-                <div id="product-title">{'Product Title'}</div>
-                <div id="amount">$<span id="product-amount">{99.99}</span></div>
-                <div id="product-description">{'Product Description'}</div>
-                <div id="size-div">SIZE<span className="required-size">*</span> <span id="selected-size">{""}</span></div>
+                <div id="product-title">{productData?.title}</div>
+                <div id="amount">$<span id="product-amount">{productData?.price ? productData.price.toFixed(2) : ''}</span></div>
+                <div id="product-description">{productData?.description}</div>
+                <div id="size-div">SIZE<span className="required-size">*</span> <span id="selected-size">{selectedSize?.label || ""}</span></div>
                 <div id="size-selection">
-                    <button
-                        className={`size-button`}
-                        onClick={() => handleSizeClick([])}
-                    />
+                    {productData?.sizeOptions?.map((size) => (
+                        <button
+                            className={`size-button ${selectedSize === size ? 'selected' : ''}`}
+                            key={size.id}
+                            onClick={() => handleSizeClick(size)}
+                        >
+                            {size.label}
+                        </button>
+                    ))}
                 </div>
                 <button id="add-to-cart" onClick={() => addToCart(selectedSize)}>
                     ADD TO CART

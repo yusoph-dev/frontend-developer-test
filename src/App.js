@@ -1,7 +1,6 @@
 
 import React, { useEffect, useState } from 'react';
 
-
 // Import the fetchProducts utility
 import { fetchProducts } from './api/api';  
 
