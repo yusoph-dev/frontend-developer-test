@@ -24,7 +24,7 @@ function Header(props) {
                     onClick={toggleCartVisibility}
                     disabled={cartCount === 0}
                 >
-                    <span id="cart-text">Cart</span> ( <span id="cart-count">{cartCount}</span> ) 
+                    <span id="cart-text"></span> ( <span id="cart-count">{cartCount}</span> ) 
                 </button>
                 <div className={`cart-dropdown ${isCartVisible ? 'active' : ''}`} id="cart-dropdown">
                     <div id="cart-list">

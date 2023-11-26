@@ -290,15 +290,15 @@ div>.cart-details {
     }
 
     #cart-text {
-        margin-right: 2px;
+        margin-right: 0.8em;
         /* Adjust the space as needed */
     }
 
     #cart-text::before {
         content: "";
         display: inline-block;
-        width: 11px;
-        height: 10px;
+        width: 1.3em;
+        height: 1.2em;
         background: url('../images/cart.svg') no-repeat center center;
         background-size: cover;
         filter: invert(56%) sepia(4%) saturate(34%) hue-rotate(314deg) brightness(95%) contrast(90%);
