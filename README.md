@@ -1,70 +1,54 @@
-# Getting Started with Create React App
+# ReactJS front-end developer test app
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Prerequisites
 
-In the project directory, you can run:
+Node.js installed (recommended version: v16.14.0 or higher)
+npm installed (comes with Node.js installation)
 
-### `npm start`
+## Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Clone this project repository to your local machine.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. Open the project directory in your terminal or command prompt.
 
-### `npm test`
+3. Install the project dependencies using npm:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### `npm install`
 
-### `npm run build`
+## Running the Development Server
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Start the development server using npm:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### npm start
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. The development server will start on http://localhost:3000. Open this URL in your web browser to view the application.
 
-### `npm run eject`
+## `Building for Production`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Create a production build using npm:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### npm run build
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. The production build files will be generated in the build directory. You can deploy these files to a hosting platform like Vercel or Netlify.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Using the React JS Project
 
-## Learn More
+This React JS project is a simple e-commerce application that allows users to add items to a shopping cart. The application consists of two main components:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Product: This component displays the product details, including the product image, title, description, price, and size options. Users can add a product to their cart by selecting a size and clicking the "Add to Cart" button.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+2. Header: This component displays the shopping cart icon and the total number of items in the cart. Users can click on the cart icon to view the cart items.
 
-### Code Splitting
+## Contributing to the Project
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+If you would like to contribute to this project, please follow these guidelines:
 
-### Analyzing the Bundle Size
+1. Fork the project repository to your own account.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+2. Create a new branch for your changes.
 
-### Making a Progressive Web App
+3. Make your changes and commit them to your branch.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+4. Create a pull request to merge your changes into the upstream repository.
