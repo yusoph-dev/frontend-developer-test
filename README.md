@@ -1,61 +1,72 @@
-# ReactJS front-end developer test app
+# ReactJS Front-End Developer Test App
 
-## This app is currently deployed here:
+## Live Demo
 
-## https://yusoph-developer-test.vercel.app/
+This app is currently deployed [here](https://yusoph-developer-test.vercel.app/).
 
-![alt text](https://github.com/yusoph-dev/frontend-developer-test/blob/main/public/laptop-ui.png?raw=true)
+![Laptop UI](https://github.com/yusoph-dev/frontend-developer-test/blob/main/public/laptop-ui.png?raw=true)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Prerequisites
 
-Node.js installed (recommended version: v16.14.0 or higher)
-npm installed (comes with Node.js installation)
+Ensure you have Node.js installed (recommended version: v16.14.0 or higher) and npm installed (comes with Node.js installation).
 
 ## Installation
 
 1. Clone this project repository to your local machine.
 
+    ```bash
+    git clone https://github.com/yusoph-dev/frontend-developer-test.git
+    ```
+
 2. Open the project directory in your terminal or command prompt.
 
 3. Install the project dependencies using npm:
 
-### `npm install`
+    ```bash
+    npm install
+    ```
 
 ## Running the Development Server
 
 1. Start the development server using npm:
 
-### npm start
+    ```bash
+    npm start
+    ```
 
 2. The development server will start on http://localhost:3000. Open this URL in your web browser to view the application.
 
-## `Building for Production`
+## Building for Production
 
 1. Create a production build using npm:
 
-### npm run build
+    ```bash
+    npm run build
+    ```
 
-2. The production build files will be generated in the build directory. You can deploy these files to a hosting platform like Vercel or Netlify.
+2. The production build files will be generated in the build directory. Deploy these files to a hosting platform like Vercel or Netlify.
 
-## `Unit testing using Jest`
+## Unit Testing Using Jest
 
-1. you can browse the test file thru src/App.test.js:
+1. Browse the test file through `src/App.test.js`.
 
-2. To run Unit testing
+2. To run unit testing:
 
-### npm run jest-test
+    ```bash
+    npm run jest-test
+    ```
 
-this will test rendering of product details, selects size and adds product to cart
+This will test rendering of product details, selecting size, and adding a product to the cart.
 
 ## Using the React JS Project
 
 This React JS project is a simple e-commerce application that allows users to add items to a shopping cart. The application consists of two main components:
 
-1. Product: This component displays the product details, including the product image, title, description, price, and size options. Users can add a product to their cart by selecting a size and clicking the "Add to Cart" button.
+1. **Product:** This component displays the product details, including the product image, title, description, price, and size options. Users can add a product to their cart by selecting a size and clicking the "Add to Cart" button.
 
-2. Header: This component displays the shopping cart icon and the total number of items in the cart. Users can click on the cart icon to view the cart items.
+2. **Header:** This component displays the shopping cart icon and the total number of items in the cart. Users can click on the cart icon to view the cart items.
 
 ## Contributing to the Project
 
